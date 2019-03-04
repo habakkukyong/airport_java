@@ -1,18 +1,18 @@
-package airport;
+package plane;
 
+import airport.Airport;
 import org.junit.jupiter.api.Test;
-import plane.Plane;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class AirportTest {
+class PlaneLandTest {
 
     @Test
-    void landPlane() {
-        // Plane can be landed at airport
+    void land() {
+        // Plane can be instructed to land at airport
         Airport Heathrow = new Airport();
         Plane plane = new Plane();
-        Heathrow.landPlane(plane);
+        plane.land(Heathrow);
         assertEquals(plane, Heathrow.landedPlanes.get(0));
     }
 }
