@@ -12,7 +12,7 @@ class PlaneDepartTest {
         // Plane can be instructed to take off from airport
         Airport Heathrow = new Airport();
         Plane plane = new Plane();
-        plane.land(Heathrow);;
+        plane.land(Heathrow);
         plane.depart(Heathrow);
         assertFalse(Heathrow.landedPlanes.contains(plane));
     }
