@@ -13,6 +13,6 @@ class PlaneLandTest {
         Airport Heathrow = new Airport();
         Plane plane = new Plane();
         plane.land(Heathrow);
-        assertEquals(plane, Heathrow.landedPlanes.get(0));
+        assertTrue(Heathrow.landedPlanes.contains(plane));
     }
 }

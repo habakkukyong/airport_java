@@ -10,4 +10,8 @@ public class Airport {
     public void land(Plane plane) { landedPlanes.add(plane); }
 
     public void depart(Plane plane) { landedPlanes.remove(plane); }
+
+    public boolean confirmDeparture(Plane plane) {
+        return landedPlanes.size() == 0 ? true : !landedPlanes.contains(plane);
+    }
 }
